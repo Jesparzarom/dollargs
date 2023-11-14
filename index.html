@@ -101,9 +101,7 @@
         </a>
       </div>
     </nav>
-
-    <!--     <header class="container-fluid mt-4 text-center">
-    </header> -->
+    
     <main class="mb-5 pb-5 hidde" id="app">
       <!----------------------- VALUES -------------------------->
       <section class="text-color-dark py-5">
@@ -229,7 +227,7 @@
       </section>
     </main>
 
-    <footer class="bg-light text-center text-lg-start mt-5 hidde">
+    <footer class="bg-light text-center text-lg-start mt-5 hidde ">
       <div class="container p-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -268,7 +266,7 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <div>
               <img
-                src="./src/img/astrowave.jpeg"
+                src="./src/img/dollargsboy2.jpeg"
                 alt=""
                 class="cover-image rounded-4"
               />
@@ -292,12 +290,8 @@
       window.addEventListener("DOMContentLoaded", () => {
         const loader = document.getElementById("loaderContainer");
         let content = document.querySelectorAll(".hidde");
-
-        // usar setTimeout para ocultar el loader después de 3000 milisegundos (3 segundos)
         setTimeout(() => {
           loader.style.display = "none";
-
-          // Iterar sobre la NodeList y aplicar el estilo a cada elemento
           content.forEach((element) => {
             element.classList.remove("hidde");
           });
