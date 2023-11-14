@@ -32,9 +32,10 @@ body {
 
 input {
     background-color: var(--color-light) !important;
+    cursor: pointer
 }
 
-h1,
+input:hover h1,
 h2,
 h3 {
     font-family: var(--font-logo);
@@ -82,6 +83,10 @@ input {
 
 .txt-subtitles {
     font-family: var(--font-mukta);
+}
+
+.small {
+    font-size: xx-small;
 }
 
 
@@ -151,13 +156,12 @@ input {
 }
 
 .bg-gradient-primary {
-    background: #BE93C5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
-
-
+    background: #BE93C5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-img {
@@ -174,8 +178,8 @@ background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, F
     height: 100%;
     object-fit: cover;
     user-select: none;
-  }
-  
+}
+
 /***************************************************+
 ****************** UI ELEMENTS **********************
 *****************************************************/
@@ -198,4 +202,52 @@ button:hover {
 button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
+}
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 10em;
+    height: 10em;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    animation: spin 3s infinite;
+}
+
+.loader::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+
+/***************************************************+
+****************** ACTIONS **********************
+*****************************************************/
+.hidde {
+    display: none;
 }
