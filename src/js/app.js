@@ -2,6 +2,7 @@ const { createApp } = Vue;
 import { getTiposCambio, getTiposCambioAll } from "./money_converter.js";
 
 createApp({
+
   data() {
     return {
       cardTitle: "Conversor de Dólares a Pesos Argentinos",
@@ -27,6 +28,7 @@ createApp({
       },
     };
   },
+
   // methods
   methods: {
     cambiarTipo() {
