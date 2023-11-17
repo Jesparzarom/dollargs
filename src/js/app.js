@@ -2,7 +2,6 @@ const { createApp } = Vue;
 import { getTiposCambio, getTiposCambioAll } from "./money_converter.js";
 
 createApp({
-
   data() {
     return {
       cardTitle: "Conversor de Dólares a Pesos Argentinos",
@@ -12,19 +11,19 @@ createApp({
       tipos: {},
       cotizaciones: {},
       moneda: "",
-      descripcion : "",
+      descripcion: "",
       descripciones: {
         oficial:
-          "Es el tipo de cambio que fija el Banco Central de la República Argentina y que se aplica para las operaciones de comercio exterior y otras transacciones legales.",
-        blue: "Es el tipo de cambio que se negocia en el mercado informal o paralelo, donde se compran y venden dólares sin la intervención del Banco Central ni el cumplimiento de las normas cambiarias.",
+          "El valor del dólar establecido por el Banco Central de Argentina, utilizado en operaciones de comercio exterior y otras transacciones legales.",
+        blue: "El valor del dólar en el mercado informal, donde se compran y venden dólares sin la intervención del Banco Central.",
         bolsa:
-          "Es el tipo de cambio que surge de la compra y venta de bonos o acciones que cotizan en pesos y en dólares, tanto en el mercado local como en el extranjero. También se conoce como dólar MEP o dólar bolsa.",
+          "El valor del dólar que surge de la compra y venta de bonos como el AL30 y el GD30, que cotizan en pesos y dólares.",
         contadoconliqui:
-          "Es el tipo de cambio que surge de la transferencia de activos financieros al exterior, mediante la compra de bonos o acciones en el mercado local y su posterior venta en el mercado extranjero. También se conoce como dólar CCL.",
+          "El valor del dólar que resulta de transferir activos financieros al exterior, comprando bonos o acciones en el mercado local y vendiéndolos en el extranjero.",
         solidario:
-          "Es el tipo de cambio que se aplica para las operaciones de ahorro o turismo en el exterior, que incluye el impuesto PAIS del 30% y la percepción del 35% a cuenta de Ganancias y Bienes Personales. También se conoce como dólar tarjeta.",
+          "El valor del dólar utilizado para ahorro o turismo en el exterior. Incluye el impuesto PAIS del 30% y la percepción del 35% a cuenta de Ganancias y Bienes Personales.",
         mayorista:
-          "Es el tipo de cambio que se utiliza para las operaciones de grandes volúmenes entre bancos, empresas e instituciones financieras, que se realizan en el Mercado Único y Libre de Cambios (MULC).",
+          "El valor del dólar para operaciones de grandes volúmenes entre bancos, empresas e instituciones financieras, realizadas en el Mercado Único y Libre de Cambios (MULC).",
       },
     };
   },
@@ -80,5 +79,5 @@ createApp({
     getTiposCambioAll().then((tiposCambioAll) => {
       this.cotizaciones = tiposCambioAll;
     });
-  },
+  }
 }).mount("#app");
