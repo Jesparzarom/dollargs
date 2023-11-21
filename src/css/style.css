@@ -87,6 +87,7 @@ input {
 
 .small {
     font-size: xx-small;
+    text-align: justify;
 }
 
 
@@ -164,20 +165,11 @@ input {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg-img {
-    background-color: rgba(255, 255, 255, 0.404);
-    background-image: url("../img/astrowave.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: lighten;
-}
-
 .cover-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    user-select: none;
+    object-fit: cover;     
+    user-select: none; 
 }
 
 /***************************************************+
@@ -204,7 +196,14 @@ button:active {
     box-shadow: 0.05em 0.05em;
 }
 
+
 .loader-container {
+    background: #bdb3b3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(365deg, #71e1e9, #be93c5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(365deg, rgba(0, 18, 185, 0.103), #ce18731a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -213,10 +212,11 @@ button:active {
 }
 
 .loader {
-    width: 10em;
-    height: 10em;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-    animation: spin 3s infinite;
+    width: 15em;
+    height: 15em;
+    background: linear-gradient(-45deg, #d85e9b 0%, #316cc4 100%);
+    animation: spin 10s infinite;
+    border-radius: 50%;
 }
 
 .loader::before {
@@ -224,26 +224,50 @@ button:active {
     z-index: -1;
     position: absolute;
     inset: 0;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    background: linear-gradient(-45deg, #bd00c0 0% rgb(0, 187, 190) 100%);
     transform: translate3d(0, 0, 0) scale(0.95);
     filter: blur(20px);
 }
 
+.loader-img {
+    width: 85%;
+    opacity: 90%;
+    animation: imgspin 10s infinite;
+    border-radius: 50%;
+   
+    
+}
+
+
 @keyframes spin {
     0% {
-        transform: rotate(-45deg);
+        transform: rotate(0deg);
     }
 
     50% {
-        transform: rotate(-360deg);
+        transform: rotate(-5000deg);
         border-radius: 50%;
     }
 
     100% {
-        transform: rotate(-45deg);
+        transform: rotate(20deg);
     }
 }
 
+@keyframes imgspin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5000deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
 
 /***************************************************+
 ****************** ACTIONS **********************
