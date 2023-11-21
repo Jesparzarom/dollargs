@@ -21,7 +21,7 @@ El proyecto Dollargs se ha desarrollado utilizando las siguientes tecnologías:
 
 ## Versión
 
-La versión actual de Dollargs es la **v1.0.0** siguiendo las convenciones de versionado semántico (SemVer). Esta versión inicial proporciona las funciones básicas de conversión de dólares a pesos utilizando la API de dolarapi.com.
+La versión actual de Dollargs es la **v1.0.2** siguiendo las convenciones de versionado semántico (SemVer). Esta versión inicial proporciona las funciones básicas de conversión de dólares a pesos utilizando la API de dolarapi.com.
 
 ## Cómo Reportar Errores
 
