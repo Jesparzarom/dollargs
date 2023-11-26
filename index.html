@@ -164,17 +164,11 @@
                   ></i
                   >&nbsp;
                   <span class="fw-bold">
-
-                    {{ 
-                      (tipo != 'contadoconliqui' ? ( tipo!="bolsa" ?
-                      (tipo!="solidario" ? tipo.toUpperCase(): "TARJETA") :
-                      "MEP") : "CCL") 
-                    }}
+                    {{ (tipo != 'contadoconliqui' ? ( tipo!="bolsa" ?
+                    tipo.toUpperCase(): "MEP") : "CCL") }}
                   </span>
                   :
-                  <span class="fw-medium">
-                   {{ descripcion }}
-                  </span>  
+                  <span class="fw-medium"> {{ descripcion }} </span>
                 </p>
               </div>
 
@@ -193,13 +187,8 @@
                     class="txt-option option text-center"
                     :value="nombre"
                   >
-
-                    {{ 
-                      (nombre != 'contadoconliqui' ? ( nombre!="bolsa" ?
-                      (nombre!="solidario" ? nombre.toUpperCase(): "TARJETA") :
-                      "MEP") : "CCL") 
-                    }}
-
+                    {{ (nombre != 'contadoconliqui' ? ( nombre!="bolsa" ?
+                    nombre.toUpperCase(): "MEP") : "CCL") }}
                   </option>
                 </select>
               </div>
@@ -298,7 +287,7 @@
               />
             </div>
             <hr />
-            <code>Dollargs Beta 1.0.2</code>
+            <code>Dollargs Beta 1.0.3</code>
           </div>
         </div>
       </div>
