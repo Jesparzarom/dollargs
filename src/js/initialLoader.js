@@ -1,3 +1,6 @@
+/*******************************************************/
+/**** LOADER PARA CARGAR EL CÓDIGO VUE AL DOCUMENTO ***/
+/*****************************************************/
 window.addEventListener("DOMContentLoaded", () => {
     const loader = document.getElementById("loaderContainer");
     let content = document.querySelectorAll(".hidde");
