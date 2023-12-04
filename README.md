@@ -8,7 +8,7 @@
 
 ## Descripción del Proyecto
 
-Dollargs es un proyecto diseñado para proporcionar una herramienta sencilla y eficiente para convertir dólares a pesos argentinos. Utilizando la API de dolarapi.com, Dollargs realiza conversiones instantáneas, brindando a los usuarios la capacidad de entender el valor de su dinero en Argentina de manera rápida y fácil.
+Dollargs es un proyecto diseñado para proporcionar una herramienta sencilla y eficiente para convertir dólares a pesos argentinos. Utilizando la API de [dolarapi.com](https://dolarapi.com/docs), Dollargs realiza conversiones instantáneas, brindando a los usuarios la capacidad de entender el valor de su dinero en Argentina de manera rápida y fácil.
 
 ## Tecnologías Utilizadas
 
@@ -21,7 +21,7 @@ El proyecto Dollargs se ha desarrollado utilizando las siguientes tecnologías:
 
 ## Versión
 
-La versión actual de Dollargs es la **v1.0.3** siguiendo las convenciones de versionado semántico (SemVer). Esta versión inicial proporciona las funciones básicas de conversión de dólares a pesos utilizando la API de dolarapi.com.
+La versión actual de Dollargs es la **v1.0.4** siguiendo las convenciones de versionado semántico (SemVer). Esta versión inicial proporciona las funciones básicas de conversión de dólares a pesos utilizando la API de dolarapi.com.
 
 ## Cómo Reportar Errores
 
