@@ -173,7 +173,7 @@ input {
 }
 
 .footer-title {
-    color:#bd00c0;
+    color:#bd00c0 !important;
 }
 
 /***************************************************+
@@ -201,14 +201,14 @@ button:active {
 }
 
 .btn-coffe {
-    background-color: #14f5c6;
-    box-shadow: 2px 2px 0px 2px #bd00c0;
+    background-color: #14f5c6 !important;
+    box-shadow: 2px 2px 0px 2px #bd00c0 !important;
 }
 
 .btn-coffe:hover {
-    background-color: #14f5c400;
-    color: #14f5c6;
-    box-shadow: 0px 0px 0px 1px #14f5c6;
+    background-color: #14f5c400 !important;
+    color: #14f5c6 !important;
+    box-shadow: 0px 0px 0px 1px #14f5c6 !important;
 }
 
 
