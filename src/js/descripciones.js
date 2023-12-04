@@ -28,6 +28,13 @@ const dolarMayorista = `
   empresas e instituciones financieras, realizadas en el Mercado Único y Libre de Cambios (MULC).
   `;
 
+const dolarCripto = `
+  El dólar cripto es un tipo de cambio digital cuyas transacciones se producen a través de plataformas virtuales. 
+  Las stablecoins son criptomonedas con valor estable y están atadas a la divisa estadounidense,
+  `;
+
+
+
 
 /**************************************************/
 /**** DESCRIPCIONES SOBRE LOS TIPOS DE CAMBIO ****/
@@ -40,6 +47,7 @@ export function obtenerDescripciones() {
     contadoconliqui: dolarCCL,
     tarjeta: dolarTarjeta,
     mayorista: dolarMayorista,
+    cripto: dolarCripto
   };
   return descripciones;
 }

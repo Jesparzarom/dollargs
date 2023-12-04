@@ -167,9 +167,13 @@ input {
 
 .cover-image {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;     
     user-select: none; 
+}
+
+.footer-title {
+    color:#bd00c0;
 }
 
 /***************************************************+
@@ -224,7 +228,7 @@ button:active {
     z-index: -1;
     position: absolute;
     inset: 0;
-    background: linear-gradient(-45deg, #bd00c0 0% rgb(0, 187, 190) 100%);
+    background: linear-gradient(-45deg, rgb(191, 0, 194)rgb(0, 187, 190) 100%);
     transform: translate3d(0, 0, 0) scale(0.95);
     filter: blur(20px);
 }
@@ -275,3 +279,4 @@ button:active {
 .hidde {
     display: none;
 }
+
